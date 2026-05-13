@@ -1,0 +1,26 @@
+Configuration file: D:/y1kailu.github.io/_config.yml
+            Source: D:/y1kailu.github.io
+       Destination: D:/y1kailu.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 10.39 seconds.
+ Auto-regeneration: enabled for 'D:/y1kailu.github.io'
+Configuration file: D:/y1kailu.github.io/_config.yml
+ LiveReload Server: 127.0.0.1:35729
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+[2026-05-13 21:05:17] ERROR NoMethodError: undefined method `key?' for nil
+	D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-3.10.0/lib/jekyll/commands/serve/servlet.rb:191:in `conditionally_inject_charset'
+	D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/jekyll-3.10.0/lib/jekyll/commands/serve/servlet.rb:176:in `do_GET'
+	D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/hawkins-2.0.5/lib/hawkins/servlet.rb:134:in `do_GET'
+	D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/webrick-1.9.2/lib/webrick/httpservlet/abstract.rb:105:in `service'
+	D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/webrick-1.9.2/lib/webrick/httpservlet/filehandler.rb:242:in `service'
+	D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:140:in `service'
+	D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:96:in `run'
+	D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+      Regenerating: 1 file(s) changed at 2026-05-13 21:06:38
+                    _plugins/windows_webrick_charset_fix.rb
+       Jekyll Feed: Generating feed for posts
+                    ...done in 10.357219 seconds.
+                    

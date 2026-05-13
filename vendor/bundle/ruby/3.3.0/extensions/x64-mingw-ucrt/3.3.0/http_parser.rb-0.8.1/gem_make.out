@@ -1,0 +1,20 @@
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+D:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260513-29292-tdwtfa sitelibdir\=./.gem.20260513-29292-tdwtfa clean
+
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260513-29292-tdwtfa sitelibdir\=./.gem.20260513-29292-tdwtfa
+generating ruby_http_parser-x64-mingw-ucrt.def
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260513-29292-tdwtfa sitelibdir\=./.gem.20260513-29292-tdwtfa install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260513-29292-tdwtfa
+
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260513-29292-tdwtfa sitelibdir\=./.gem.20260513-29292-tdwtfa clean

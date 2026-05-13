@@ -1,0 +1,20 @@
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+D:/Ruby33-x64/bin/ruby.exe extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20260513-42544-ehoy6s sitelibdir\=./.gem.20260513-42544-ehoy6s clean
+
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20260513-42544-ehoy6s sitelibdir\=./.gem.20260513-42544-ehoy6s
+generating unf_ext-x64-mingw-ucrt.def
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20260513-42544-ehoy6s sitelibdir\=./.gem.20260513-42544-ehoy6s install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20260513-42544-ehoy6s
+
+current directory: D:/y1kailu.github.io/vendor/bundle/ruby/3.3.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20260513-42544-ehoy6s sitelibdir\=./.gem.20260513-42544-ehoy6s clean

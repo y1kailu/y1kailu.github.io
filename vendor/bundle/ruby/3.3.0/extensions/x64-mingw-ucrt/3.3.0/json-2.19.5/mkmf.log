@@ -1,0 +1,201 @@
+have_func: checking for rb_enc_interned_str() in ruby/encoding.h... -------------------- yes
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -o conftest.exe -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LD:/Ruby33-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -o conftest.exe -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LD:/Ruby33-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby/encoding.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_str_to_interned_str() in ruby.h... -------------------- yes
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -o conftest.exe -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LD:/Ruby33-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_str_to_interned_str; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_new_capa() in ruby.h... -------------------- yes
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -o conftest.exe -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LD:/Ruby33-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_new_capa; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_bulk_insert() in ruby.h... -------------------- yes
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -o conftest.exe -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LD:/Ruby33-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_bulk_insert; return !p; }
+/* end */
+
+--------------------
+
+have_const: checking for RUBY_TYPED_EMBEDDABLE in ruby.h... -------------------- yes
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <ruby.h>
+6: 
+7: /*top*/
+8: typedef int conftest_type;
+9: conftest_type conftestval = (int)RUBY_TYPED_EMBEDDABLE;
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong  -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+have_header: checking for x86intrin.h... -------------------- yes
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <x86intrin.h>
+/* end */
+
+--------------------
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99  -Werror=implicit-function-declaration -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <x86intrin.h>
+ 6: 
+ 7: int main(int argc, char **argv) {
+ 8:   __m128i test = _mm_set1_epi8(32);
+ 9:   if (__builtin_cpu_supports("sse2")) { printf("OK"); }
+10:   if (argc > 100000) printf("%p", &test);
+11:   return 0;
+12: }
+/* end */
+
+have_header: checking for cpuid.h... -------------------- yes
+
+PATH=".;D:/Ruby33-x64/lib;D:\Ruby33-x64\bin;D:\Ruby33-x64\msys64\ucrt64\bin;D:\Ruby33-x64\msys64\usr\bin;C:\Users\30390\.codex\tmp\arg0\codex-arg0W7CK0b;D:\python\Microsoft VS Code;D:\C++\Dev-Cpp\MinGW64\bin;D:\python\Scripts\;D:\python\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\NodeJS\;D:\Git\Git\cmd;C:\Program Files\dotnet\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\30390\.elan\bin;D:\Ruby33-x64\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;D:\python\Microsoft VS Code\bin;C:\Users\30390\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\30390\AppData\Roaming\npm;D:\NodeJS\fnm;C:\Users\30390\AppData\Local\GitHubDesktop\bin;C:\Users\30390\AppData\Local\Microsoft\WindowsApps;;c:\Users\30390\.vscode\extensions\openai.chatgpt-26.417.40842-win32-x64\bin\windows-x86_64" "gcc -ID:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -ID:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -ID:/Ruby33-x64/include/ruby-3.3.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <cpuid.h>
+/* end */
+
+--------------------
+
