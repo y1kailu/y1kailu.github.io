@@ -26,7 +26,7 @@ Currently, I am very fortunate to be advised by Tongxin Li at the Chinese Univer
 
 # 📝 Publications 
 
-- A World in Pieces: Structural Certification of General Agents. **Yikai Lu**, Yifei Wu, Xinyu Lu, Tongxin Li. **ICML 2026**
+- World Models in Pieces: Structural Certification of General Agents. **Yikai Lu**, Yifei Wu, Xinyu Lu, Tongxin Li. **ICML 2026**
 
 # 🎖 Honors and Awards
 - *2026.04* The 30th Undergraduate Research Award.
