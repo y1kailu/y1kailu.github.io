@@ -19,7 +19,7 @@ redirect_from:
 
 Thanks for stopping by! I am a third-year undergraduate student at the Chinese University of Hong Kong, Shenzhen, majoring in Data Science and minoring in Mathematics. Also, I am currently an exchange student at Nanyang Technological University (NTU), College of Computing and Data Science (CCDS). My research interests focus on reinforcement learning theory and control theory, particularly their intersections with world models and agentic AI. As I continue my studies, I hope to further explore broader mathematical methods and their applications across different fields.
 
-Currently, I am very fortunate to be advised by Tongxin Li at the Chinese University of Hong Kong, Shenzhen, School of Data Science (SDS), and co-advised by Adam Wierman at California Institute of Technology (Caltech), Computing & Mathematics School (CMS). I am deeply grateful to all my advisors and collaborators for their guidance and support.
+Currently, I am very fortunate to be advised by Tongxin Li at the Chinese University of Hong Kong, Shenzhen, School of Data Science (SDS). I am deeply grateful to all my advisors and collaborators for their guidance and support.
 
 # 🔥 News
 - *2026.05*: &nbsp;🎉🎉 Our paper was accepted by the 43rd International Conference on Machine Learning (ICML 2026)!
