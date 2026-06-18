@@ -30,10 +30,11 @@ Currently, I am very fortunate to be advised by Tongxin Li at the Chinese Univer
 
 # 🎖 Honors and Awards
 - *2026.04* The 30th Undergraduate Research Award.
-- *2025.12* 2024-2025 Academic Performance Award (Award for top 5% students in the school).
+- *2025.12* 2024-2025 Academic Performance Award (Award for top 1-5% students in the school).
 
 # 📖 Education
 - *2024.07 - Present*, B.sc. at School of Data Science, The Chinese University of Hong Kong, Shenzhen.
 
 # 💬 Service & Teaching
 - *2026.01-2026.05*, USTF of **MAT 2041**, Linear Algebra: Theory and Applications.
+- *2026.09-2027.01*, USTF of **MAT 2050**, Mathematical Analysis.
