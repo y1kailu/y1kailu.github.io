@@ -1,3 +1,6 @@
 _site/
+.jekyll-check-*/
+.jekyll-preview-*/
+jekyll-inline-preview*.log
 push.sh
 .DS_Store

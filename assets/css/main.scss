@@ -87,51 +87,119 @@
 
 }
 
-.affiliation-logos {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.9rem 1.1rem;
-    margin: -0.4rem 0 1.4rem;
+.masthead {
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 6px 18px rgba(20, 30, 40, 0.05);
+}
+
+.greedy-nav {
+    background: transparent;
 
     a {
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none !important;
+        margin: 0 0.72rem;
+        color: #46505a;
+        font-size: 0.94em;
     }
 
-    img {
-        display: block;
-        width: auto;
-        object-fit: contain;
-        box-shadow: none !important;
+    .visible-links a:before {
+        height: 2px;
+        background: #4b78a8;
     }
 }
 
-.affiliation-logo--sds {
-    max-width: 260px;
-    max-height: 36px;
+.profile-intro {
+    margin: 0 0 1.7rem;
+    padding: 1.05rem 1.2rem;
+    border: 1px solid #e4eaf0;
+    border-left: 4px solid #4b78a8;
+    border-radius: 6px;
+    background: #fbfcfd;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.affiliation-logo--deepmind {
-    max-width: 24px;
-    max-height: 24px;
+.inline-affiliation-icon {
+    display: inline-block;
+    width: auto;
+    box-shadow: none !important;
+    vertical-align: -0.18em;
 }
 
-.affiliation-logo-card {
-    gap: 0.45rem;
-    color: #202124;
-    font-family: $sans-serif;
-    font-size: 0.82em;
-    font-weight: 600;
+.inline-affiliation-icon--sds {
+    height: 1.2em;
+    max-width: 3.6em;
+    margin-left: 0.16em;
+    padding: 0.08em 0.16em;
+    border-radius: 3px;
+    background: #111;
+    object-fit: contain;
+}
+
+.inline-affiliation-icon--deepmind {
+    height: 1.05em;
+    margin-left: 0.14em;
+}
+
+.page__content {
+    h1 {
+        margin-top: 1.55em;
+        padding-bottom: 0.45em;
+        border-bottom: 0;
+        color: #27313d;
+        font-size: 1.42em;
+        letter-spacing: 0;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin-top: 0.52rem;
+            background: linear-gradient(90deg, #4b78a8, #4f8f7a, #d9dee5);
+        }
+    }
+
+    > ul {
+        margin: 0 0 1.35rem;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    > ul > li {
+        margin: 0.5rem 0;
+        padding: 0.6rem 0.78rem;
+        border-left: 3px solid #d7e1ea;
+        border-radius: 6px;
+        background: #fafbfc;
+        line-height: 1.65;
+        transition: $global-transition;
+
+        &:hover {
+            border-left-color: #4f8f7a;
+            background: #f6f9fb;
+        }
+    }
+
+    a {
+        text-underline-offset: 0.16em;
+    }
+}
+
+.lyricist-note {
+    p:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .lyricist-quote {
     max-width: 760px;
     margin: 1.8rem auto 0;
     padding: 1.35rem 1.6rem 1.1rem;
-    border-top: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e5ded2;
+    border-bottom: 1px solid #e5ded2;
+    background: #fffdf8;
     color: #2d2d2d;
 
     blockquote {
@@ -154,9 +222,12 @@
 }
 
 @include breakpoint(max-width $small) {
-    .affiliation-logo--sds {
-        max-width: 220px;
-        max-height: 32px;
+    .greedy-nav a {
+        margin: 0 0.55rem;
+    }
+
+    .profile-intro {
+        padding: 0.95rem 1rem;
     }
 
     .lyricist-quote {
