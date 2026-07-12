@@ -40,8 +40,10 @@ Currently, I am very fortunate to be advised by Tongxin Li at the School of Data
 - *2025.12* 2024-2025 Academic Performance Award (Award for top 1-5% students in school).
 
 <span class='anchor' id='education'></span>
-# 📖 Education
+# 📖 Education and Research Interest
 - *2024.07 - Present*, B.sc. at School of Data Science, The Chinese University of Hong Kong, Shenzhen.
+
+- *2025.01 - Present*, Reinforcement Learning, Control Theory, Game Theory.
 
 <span class='anchor' id='service'></span>
 # 💬 Service & Teaching
