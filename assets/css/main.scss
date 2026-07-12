@@ -122,23 +122,17 @@
 
 .inline-affiliation-icon {
     display: inline-block;
+    height: 1.08em;
     width: auto;
     box-shadow: none !important;
-    vertical-align: -0.18em;
+    vertical-align: -0.16em;
 }
 
 .inline-affiliation-icon--sds {
-    height: 1.2em;
-    max-width: 3.6em;
     margin-left: 0.16em;
-    padding: 0.08em 0.16em;
-    border-radius: 3px;
-    background: #111;
-    object-fit: contain;
 }
 
 .inline-affiliation-icon--deepmind {
-    height: 1.05em;
     margin-left: 0.14em;
 }
 
@@ -215,9 +209,10 @@
 
 .lyricist-quote__author {
     margin-top: 0.9rem;
-    text-align: center;
+    text-align: right;
     font-family: "Noto Serif CJK TC", "Songti TC", "Microsoft JhengHei", serif;
-    font-size: 1.02em;
+    font-size: 1.28em;
+    line-height: 1.85;
     color: #555;
 }
 
@@ -237,6 +232,11 @@
             font-size: 1.08em;
             line-height: 1.75;
         }
+    }
+
+    .lyricist-quote__author {
+        font-size: 1.08em;
+        line-height: 1.75;
     }
 }
 
