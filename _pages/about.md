@@ -21,7 +21,6 @@ Thanks for stopping by! I am a third-year undergraduate student at the Chinese U
 
 Currently, I am very fortunate to be advised by Tongxin Li at the School of Data Science (SDS), The Chinese University of Hong Kong, Shenzhen. I am also a remote intern at **Google DeepMind**, mentored by Jonathan Richens, where we are collaborating on theoretical research. I am deeply grateful to all my advisors and collaborators for their guidance and support.
 
-
 # 🔥 News
 - *2026.05*: &nbsp;🎉🎉 Our paper was accepted by the 43rd International Conference on Machine Learning (ICML 2026)!
 
@@ -39,3 +38,14 @@ Currently, I am very fortunate to be advised by Tongxin Li at the School of Data
 # 💬 Service & Teaching
 - *2026.01-2026.05*, USTF of **MAT 2041**, Linear Algebra: Theory and Applications.
 - *2026.09-2027.01*, USTF of **MAT 2050**, Mathematical Analysis.
+
+# 🌙 Some that Inspire Me
+
+I would also like to introduce my favorite lyricist, 林夕. I deeply admire the delicate and elegant, yet unconstrained, quality of his lyric writing. What moves me most is how he pours his talent and emotions into music across many different styles. He has written energetic pop rocks such as 《我的快樂時代》 and 《快樂崇拜》, subtle love songs such as 《情意結》, 《暗湧》, and 《玻璃之情》, as well as songs that reflect on life and its larger questions, such as 《任我行》 and 《再見二丁目》, and also, songs for the time, for example, 《歌頌》 and 《六月飛霜》. A recurring philosophy in his lyrics is the art of letting go: letting go of worldly success, of unrequited love, and even of life and death. This also gives many of his works a quiet, almost Zen-like (禪意) quality. His literary talent allows his writing to move freely across styles, and this is something I aspire to in my own work as well: to apply mathematics across different fields and create work that is both rigorous and interesting.
+
+<div class="lyricist-quote" lang="zh-Hant">
+  <blockquote>
+    我不想說什麼一百種幸福的方法，那種書我看過，什麼泡一個熱水澡呀，點一些精油蠟燭呀，那都是方法，我不喜歡方法學，幸福是感受，我要覺得幸福，幸福沒有唯一的方法，如果你以為有方法，你一定不會幸福。
+  </blockquote>
+  <div class="lyricist-quote__author">——林夕</div>
+</div>
