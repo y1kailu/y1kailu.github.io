@@ -19,14 +19,24 @@ redirect_from:
 
 Thanks for stopping by! I am a third-year undergraduate student at the Chinese University of Hong Kong, Shenzhen, majoring in Data Science and minoring in Mathematics. Also, I am currently an exchange student at Nanyang Technological University (NTU), College of Computing and Data Science (CCDS). My research interests focus on reinforcement learning theory and control theory, particularly their intersections with world models and agentic AI. As I continue my studies, I hope to further explore broader mathematical methods and their applications across different fields.
 
-Currently, I am very fortunate to be advised by Tongxin Li at the Chinese University of Hong Kong, Shenzhen, School of Data Science (SDS). I am also a remote intern at **Google Deepmind** mentored by Jonathan Richens, and we are also collobrating on some theory works. I am deeply grateful to all my advisors and collaborators for their guidance and support.
+Currently, I am very fortunate to be advised by Tongxin Li at the [School of Data Science (SDS), The Chinese University of Hong Kong, Shenzhen](https://sds.cuhk.edu.cn/en). I am also a remote intern at [**Google DeepMind**](https://deepmind.google/), mentored by Jonathan Richens, where we are collaborating on theoretical research. I am deeply grateful to all my advisors and collaborators for their guidance and support.
+
+<div class="affiliation-logos" aria-label="Affiliations">
+  <a href="https://sds.cuhk.edu.cn/en" target="_blank" rel="noopener noreferrer" aria-label="School of Data Science, CUHK-Shenzhen">
+    <img src="{{ '/images/sds-logo.png' | relative_url }}" alt="School of Data Science, CUHK-Shenzhen logo" class="affiliation-logo affiliation-logo--sds">
+  </a>
+  <a href="https://deepmind.google/" target="_blank" rel="noopener noreferrer" class="affiliation-logo-card" aria-label="Google DeepMind">
+    <img src="{{ '/images/google-deepmind-logo.png' | relative_url }}" alt="Google DeepMind logo" class="affiliation-logo affiliation-logo--deepmind">
+    <span>Google DeepMind</span>
+  </a>
+</div>
 
 # 🔥 News
 - *2026.05*: &nbsp;🎉🎉 Our paper was accepted by the 43rd International Conference on Machine Learning (ICML 2026)!
 
 # 📝 Works
 
-- World Models in Pieces: Structural Certification of General Agents. **Yikai Lu**, Yifei Wu, Xinyu Lu, Tongxin Li. **ICML 2026**
+- [World Models in Pieces: Structural Certification of General Agents](https://arxiv.org/abs/2606.24842). **Yikai Lu**, Yifei Wu, Xinyu Lu, Tongxin Li. **ICML 2026**
 
 # 🎖 Honors and Awards
 - *2026.04* The 30th Undergraduate Research Award.

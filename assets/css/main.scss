@@ -87,6 +87,52 @@
 
 }
 
+.affiliation-logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.9rem 1.1rem;
+    margin: -0.4rem 0 1.4rem;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none !important;
+    }
+
+    img {
+        display: block;
+        width: auto;
+        object-fit: contain;
+        box-shadow: none !important;
+    }
+}
+
+.affiliation-logo--sds {
+    max-width: 260px;
+    max-height: 36px;
+}
+
+.affiliation-logo--deepmind {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.affiliation-logo-card {
+    gap: 0.45rem;
+    color: #202124;
+    font-family: $sans-serif;
+    font-size: 0.82em;
+    font-weight: 600;
+}
+
+@include breakpoint(max-width $small) {
+    .affiliation-logo--sds {
+        max-width: 220px;
+        max-height: 32px;
+    }
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
