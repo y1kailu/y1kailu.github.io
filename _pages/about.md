@@ -19,18 +19,18 @@ redirect_from:
 
 Thanks for stopping by! I am a third-year undergraduate student at the Chinese University of Hong Kong, Shenzhen, majoring in Data Science and minoring in Mathematics. Also, I am currently an exchange student at Nanyang Technological University (NTU), College of Computing and Data Science (CCDS). My research interests focus on reinforcement learning theory and control theory, particularly their intersections with world models and agentic AI. As I continue my studies, I hope to further explore broader mathematical methods and their applications across different fields.
 
-Currently, I am very fortunate to be advised by Tongxin Li at the Chinese University of Hong Kong, Shenzhen, School of Data Science (SDS). I am deeply grateful to all my advisors and collaborators for their guidance and support.
+Currently, I am very fortunate to be advised by Tongxin Li at the Chinese University of Hong Kong, Shenzhen, School of Data Science (SDS). I am also a remote intern at **Google Deepmind** mentored by Jonathan Richens, and we are also collobrating on some theory works. I am deeply grateful to all my advisors and collaborators for their guidance and support.
 
 # 🔥 News
 - *2026.05*: &nbsp;🎉🎉 Our paper was accepted by the 43rd International Conference on Machine Learning (ICML 2026)!
 
-# 📝 Publications 
+# 📝 Works
 
 - World Models in Pieces: Structural Certification of General Agents. **Yikai Lu**, Yifei Wu, Xinyu Lu, Tongxin Li. **ICML 2026**
 
 # 🎖 Honors and Awards
 - *2026.04* The 30th Undergraduate Research Award.
-- *2025.12* 2024-2025 Academic Performance Award (Award for top 1-5% students in the school).
+- *2025.12* 2024-2025 Academic Performance Award (Award for top 1-5% students in school).
 
 # 📖 Education
 - *2024.07 - Present*, B.sc. at School of Data Science, The Chinese University of Hong Kong, Shenzhen.
