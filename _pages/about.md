@@ -30,7 +30,7 @@ Currently, I am very fortunate to be advised by Tongxin Li at the School of Data
 - *2026.05*: &nbsp;🎉🎉 Our paper was accepted by the 43rd International Conference on Machine Learning (ICML 2026)!
 
 <span class='anchor' id='works'></span>
-# 📝 Works
+# 📝 Selected Works
 
 - [World Models in Pieces: Structural Certification of General Agents](https://arxiv.org/abs/2606.24842). **Yikai Lu**, Yifei Wu, Xinyu Lu, Tongxin Li. **ICML 2026**
 
