@@ -40,6 +40,111 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+$blush: #d98fa5;
+$blush-deep: #b86780;
+
+html {
+    background: #fff9fb;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at 8% 12%, rgba(249, 220, 230, 0.62), transparent 27rem),
+        radial-gradient(circle at 91% 42%, rgba(252, 228, 235, 0.55), transparent 30rem),
+        linear-gradient(145deg, #fffafb 0%, #fff6f8 54%, #fffafb 100%);
+    color: #51464a;
+}
+
+#main,
+.masthead,
+.page,
+.sidebar {
+    position: relative;
+    z-index: 1;
+}
+
+/* Soft, purely decorative balloons on the home page. */
+.floating-balloons {
+    position: fixed;
+    z-index: 0;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.balloon {
+    --balloon-color: rgba(239, 174, 195, 0.2);
+    --balloon-size: 4.8rem;
+    --balloon-duration: 25s;
+    --balloon-delay: 0s;
+    position: absolute;
+    bottom: -10rem;
+    left: 10%;
+    width: var(--balloon-size);
+    height: calc(var(--balloon-size) * 1.2);
+    border: 1px solid rgba(210, 133, 158, 0.14);
+    border-radius: 52% 48% 50% 50% / 43% 43% 57% 57%;
+    background:
+        radial-gradient(circle at 32% 27%, rgba(255, 255, 255, 0.68) 0 7%, transparent 18%),
+        var(--balloon-color);
+    box-shadow: inset -0.5rem -0.7rem 1.2rem rgba(195, 112, 139, 0.06);
+    opacity: 0;
+    animation: balloon-float var(--balloon-duration) ease-in-out var(--balloon-delay) infinite;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -0.42rem;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-right: 0.32rem solid transparent;
+        border-bottom: 0.48rem solid rgba(218, 147, 170, 0.2);
+        border-left: 0.32rem solid transparent;
+        transform: translateX(-50%);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: calc(100% + 0.42rem);
+        left: 50%;
+        width: 1px;
+        height: calc(var(--balloon-size) * 1.65);
+        background: linear-gradient(rgba(190, 132, 150, 0.2), transparent);
+        transform-origin: top;
+        animation: balloon-string 3.8s ease-in-out infinite alternate;
+    }
+}
+
+.balloon--1 { left: 4%;  --balloon-size: 4.2rem; --balloon-duration: 24s; --balloon-delay: -5s; }
+.balloon--2 { left: 18%; --balloon-size: 3.2rem; --balloon-duration: 29s; --balloon-delay: -19s; --balloon-color: rgba(244, 196, 211, 0.18); }
+.balloon--3 { left: 39%; --balloon-size: 4.8rem; --balloon-duration: 31s; --balloon-delay: -11s; --balloon-color: rgba(232, 183, 210, 0.16); }
+.balloon--4 { left: 64%; --balloon-size: 3.7rem; --balloon-duration: 26s; --balloon-delay: -23s; --balloon-color: rgba(248, 190, 204, 0.17); }
+.balloon--5 { left: 81%; --balloon-size: 5.1rem; --balloon-duration: 33s; --balloon-delay: -15s; --balloon-color: rgba(225, 176, 198, 0.17); }
+.balloon--6 { left: 94%; --balloon-size: 3.4rem; --balloon-duration: 27s; --balloon-delay: -8s; }
+
+@keyframes balloon-float {
+    0%   { opacity: 0; transform: translate3d(0, 8vh, 0) rotate(-2deg); }
+    10%  { opacity: 0.72; }
+    50%  { transform: translate3d(2.2rem, -55vh, 0) rotate(3deg); }
+    90%  { opacity: 0.58; }
+    100% { opacity: 0; transform: translate3d(-1.4rem, -125vh, 0) rotate(-3deg); }
+}
+
+@keyframes balloon-string {
+    from { transform: translateX(-50%) rotate(2deg); }
+    to   { transform: translateX(-50%) rotate(-3deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .balloon {
+        display: none;
+    }
+}
+
 .paper-box {
     display: flex;
     justify-content: left;
@@ -88,8 +193,10 @@
 }
 
 .masthead {
-    background-color: rgba(255, 255, 255, 0.96);
-    box-shadow: 0 6px 18px rgba(20, 30, 40, 0.05);
+    border-bottom: 1px solid rgba(217, 143, 165, 0.15);
+    background-color: rgba(255, 249, 251, 0.9);
+    box-shadow: 0 6px 20px rgba(170, 92, 117, 0.06);
+    backdrop-filter: blur(10px);
 }
 
 .greedy-nav {
@@ -97,23 +204,24 @@
 
     a {
         margin: 0 0.72rem;
-        color: #46505a;
+        color: #665159;
         font-size: 0.94em;
     }
 
     .visible-links a:before {
         height: 2px;
-        background: #4b78a8;
+        background: linear-gradient(90deg, #d98fa5, #efb8c9);
     }
 }
 
 .profile-intro {
     margin: 0 0 1.7rem;
     padding: 1.05rem 1.2rem;
-    border: 1px solid #e4eaf0;
-    border-left: 4px solid #4b78a8;
-    border-radius: 6px;
-    background: #fbfcfd;
+    border: 1px solid #f0dce3;
+    border-left: 4px solid $blush;
+    border-radius: 12px;
+    background: rgba(255, 251, 252, 0.82);
+    box-shadow: 0 10px 30px rgba(180, 104, 130, 0.055);
 
     p:last-child {
         margin-bottom: 0;
@@ -141,7 +249,7 @@
         margin-top: 1.55em;
         padding-bottom: 0.45em;
         border-bottom: 0;
-        color: #27313d;
+        color: #5d4650;
         font-size: 1.42em;
         letter-spacing: 0;
 
@@ -151,7 +259,7 @@
             width: 100%;
             height: 1px;
             margin-top: 0.52rem;
-            background: linear-gradient(90deg, #4b78a8, #4f8f7a, #d9dee5);
+            background: linear-gradient(90deg, $blush, #efbdcb 58%, rgba(240, 220, 226, 0.25));
         }
     }
 
@@ -164,19 +272,22 @@
     > ul > li {
         margin: 0.5rem 0;
         padding: 0.6rem 0.78rem;
-        border-left: 3px solid #d7e1ea;
-        border-radius: 6px;
-        background: #fafbfc;
+        border: 1px solid rgba(234, 207, 216, 0.62);
+        border-left: 3px solid #e8becb;
+        border-radius: 10px;
+        background: rgba(255, 251, 252, 0.72);
         line-height: 1.65;
         transition: $global-transition;
 
         &:hover {
-            border-left-color: #4f8f7a;
-            background: #f6f9fb;
+            border-left-color: $blush-deep;
+            background: rgba(255, 245, 248, 0.92);
+            box-shadow: 0 7px 18px rgba(185, 106, 131, 0.06);
         }
     }
 
     a {
+        color: $blush-deep;
         text-underline-offset: 0.16em;
     }
 }
@@ -188,13 +299,16 @@
 }
 
 .lyricist-quote {
-    max-width: 760px;
-    margin: 1.8rem auto 0;
-    padding: 1.35rem 1.6rem 1.1rem;
-    border-top: 1px solid #e5ded2;
-    border-bottom: 1px solid #e5ded2;
-    background: #fffdf8;
-    color: #2d2d2d;
+    box-sizing: border-box;
+    width: min(100%, 980px);
+    max-width: none;
+    margin: 2.1rem auto 0;
+    padding: 1.65rem 2.25rem 1.35rem;
+    border: 1px solid #efd8e0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(255, 252, 253, 0.94), rgba(252, 237, 242, 0.76));
+    box-shadow: 0 14px 38px rgba(181, 104, 130, 0.08);
+    color: #51444a;
 
     blockquote {
         margin: 0;
@@ -203,7 +317,7 @@
         font-family: "Noto Serif CJK TC", "Songti TC", "Microsoft JhengHei", serif;
         font-size: 1.28em;
         line-height: 1.85;
-        letter-spacing: 0;
+        letter-spacing: 0.015em;
     }
 }
 
@@ -213,7 +327,7 @@
     font-family: "Noto Serif CJK TC", "Songti TC", "Microsoft JhengHei", serif;
     font-size: 1.28em;
     line-height: 1.85;
-    color: #555;
+    color: #89636f;
 }
 
 @include breakpoint(max-width $small) {
@@ -226,7 +340,8 @@
     }
 
     .lyricist-quote {
-        padding: 1.1rem 0.95rem 0.95rem;
+        padding: 1.2rem 1.1rem 1rem;
+        border-radius: 12px;
 
         blockquote {
             font-size: 1.08em;

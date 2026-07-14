@@ -11,6 +11,17 @@ layout: compress
 
   <body>
 
+    {% if page.url == "/" %}
+    <div class="floating-balloons" aria-hidden="true">
+      <span class="balloon balloon--1"></span>
+      <span class="balloon balloon--2"></span>
+      <span class="balloon balloon--3"></span>
+      <span class="balloon balloon--4"></span>
+      <span class="balloon balloon--5"></span>
+      <span class="balloon balloon--6"></span>
+    </div>
+    {% endif %}
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
