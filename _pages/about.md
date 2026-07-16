@@ -32,7 +32,7 @@ Currently, I am very fortunate to be advised by [Tongxin Li](https://tongxin.me/
 <span class='anchor' id='works'></span>
 # 📝 Selected Works
 
-- [World Models in Pieces: Structural Certification of General Agents](https://arxiv.org/abs/2606.24842). **Yikai Lu**, Yifei Wu, Xinyu Lu, Tongxin Li. **ICML 2026**
+- [World Models in Pieces: Structural Certification for General Agents](https://arxiv.org/abs/2606.24842). **Yikai Lu**, Yifei Wu, Xinyu Lu, Tongxin Li. **ICML 2026**
 
 <span class='anchor' id='honors'></span>
 # 🎖 Honors and Awards
