@@ -36,6 +36,7 @@ Currently, I am very fortunate to be advised by Professor [Tongxin Li](https://t
 
 <span class='anchor' id='honors'></span>
 # 🎖 Honors and Awards
+- *2026.08* The 31st Undergraduate Research Award.
 - *2026.04* The 30th Undergraduate Research Award.
 - *2025.12* 2024-2025 Academic Performance Award (Award for top 1-5% students in school).
 
